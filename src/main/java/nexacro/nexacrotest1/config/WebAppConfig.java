@@ -16,7 +16,7 @@ public class WebAppConfig implements WebMvcConfigurer {
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.jsp("/WEB-INF/jsp", ".jsp");
     }
-    
+
     //루트("/") 접속 시 index 페이지로 포워딩
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
