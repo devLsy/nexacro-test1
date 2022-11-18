@@ -19,8 +19,9 @@ public class WebAppConfig implements WebMvcConfigurer {
 
     //루트("/") 접속 시 index 페이지로 포워딩
     @Override
+    @Order(Ordered.HIGHEST_PRECEDENCE + 1)
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forword:/index.html");
+        registry.addViewController("/").setViewName("forward:/index.html");
     }
 
     //Web Resource 경로 설정
