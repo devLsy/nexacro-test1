@@ -4,6 +4,7 @@
     <Layouts>
       <Layout width="1280" height="720" screenid="Desktop_screen">
         <Button id="Button00" taborder="0" text="button" left="144" top="99" width="120" height="50" onclick="Button00_onclick"/>
+        <Static id="Static00" taborder="1" text="넥사크로 연동 페이지입니다.ㅋㅋㅋㅋ" left="440" top="122" width="120" height="60"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[
@@ -12,5 +13,8 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	alert("넥사크로 연동 완료~!!");
 };
 ]]></Script>
+    <Objects>
+      <Dataset id="Dataset00"/>
+    </Objects>
   </Form>
 </FDL>

@@ -1,12 +1,12 @@
 package nexacro.nexacrotest1.mapper;
 
-import nexacro.nexacrotest1.domain.MemberVO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
-public interface MemberMapper {
+public interface BoardMapper {
 
-    List<MemberVO> findList();
+    List<Map<String, Object>> findList();
 }

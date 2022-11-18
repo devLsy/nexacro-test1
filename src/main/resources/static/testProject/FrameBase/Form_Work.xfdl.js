@@ -24,6 +24,11 @@
             obj.set_taborder("0");
             obj.set_text("button");
             this.addChild(obj.name, obj);
+
+            obj = new Static("Static00","440","122","120","60",null,null,null,null,null,null,this);
+            obj.set_taborder("1");
+            obj.set_text("넥사크로 연동 페이지입니다.ㅋㅋㅋㅋ");
+            this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
             obj = new Layout("default","Desktop_screen",1280,720,this,function(p){});
